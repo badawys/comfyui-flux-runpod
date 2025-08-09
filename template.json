@@ -1,0 +1,23 @@
+{
+    "name": "ComfyUI FLUX Auto-Setup",
+    "description": "ComfyUI + ComfyUI-Manager + Nunchaku + KJNodes + rgthree-comparer, auto-downloads models and nodes from workflow.json + FLUX Dev/Fill/Context support.",
+    "image": "<your-dockerhub-username>/comfyui-flux:latest",
+    "gpu": "NVIDIA A10G",
+    "volumeMountPath": "/workspace",
+    "ports": [
+      {
+        "port": 8188,
+        "protocol": "tcp",
+        "description": "ComfyUI Web UI"
+      }
+    ],
+    "env": [
+      {
+        "name": "EXTRA_MODEL_URLS",
+        "description": "Comma-separated list of model URLs to download",
+        "default": ""
+      }
+    ],
+    "readme": "Place your workflow.json in /workspace before starting. ComfyUI will auto-install all required nodes and models."
+  }
+  
