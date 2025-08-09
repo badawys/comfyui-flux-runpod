@@ -1,7 +1,7 @@
 {
     "name": "ComfyUI FLUX Auto-Setup",
     "description": "ComfyUI + ComfyUI-Manager + Nunchaku + KJNodes + rgthree-comparer, auto-downloads models and nodes from workflow.json + FLUX Dev/Fill/Context support.",
-    "image": "<your-dockerhub-username>/comfyui-flux:latest",
+    "image": "badawys/comfyui-flux:latest",
     "gpu": "NVIDIA A10G",
     "volumeMountPath": "/workspace",
     "ports": [
